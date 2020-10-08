@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import PropTypes from 'prop-types';
 
 import Container from '@material-ui/core/Container';
@@ -37,4 +37,4 @@ DisplayData.defaultProps = {
   videoURL: '',
 };
 
-export default DisplayData;
+export default memo(DisplayData);
